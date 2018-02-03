@@ -11,8 +11,9 @@ let getData = () => {
         age = parseInt(prompt('Ваш возраст (только цифры):'));
     }
 
-    let retireMen = 63;
     let gender = confirm('Ваш пол мужской? Если так, нажмите "OK", если женский нажмите "Отмена"');
+    
+    let retireMen = 63;
     let retireWomen = 58;
     var answer;
 
