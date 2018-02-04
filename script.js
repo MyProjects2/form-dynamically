@@ -3,14 +3,13 @@ let getData = () => {
     let lastName = prompt('Введите вашу фамилию');
 
     let firstName = prompt('Введите ваше имя');
-
+    
     let patronymic = prompt('Введите ваше отчество');
 
     let age = parseInt(prompt('Ваш возраст:'));
     if (isNaN(age)){
         age = parseInt(prompt('Ваш возраст (только цифры):'));
     }
-
     let gender = confirm('Ваш пол мужской? Если так, нажмите "OK", если женский нажмите "Отмена"');
     
     let retireMen = 63;
@@ -25,7 +24,7 @@ let getData = () => {
         gender = 'женский';
         answer = (retireWomen > age)? 'нет': 'да';
     }
-    if (lastName == '' || firstName == '' || patronymic == '' || age == ''){
+    if (lastName == '' || firstName == '' || patronymic == '' || age == '' || lastName == null || firstName == null || patronymic == null || isNaN(age)){
         alert('Некоторые поля были пустыми. Заполните, пожалуйста, анкету');
         getData();
     } else {
