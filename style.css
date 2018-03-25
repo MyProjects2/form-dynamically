@@ -1,0 +1,10 @@
+.label {
+    width:160px;
+}
+.radio-text {
+    position: relative;
+    top: -3px;
+}
+form {
+    margin-bottom: 60px;
+}
